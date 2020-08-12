@@ -1,0 +1,65 @@
+/* ==========================================================================
+   CF Switch Field
+   ========================================================================== */
+
+$on: #009eea;
+$off: #ccc;
+
+@mixin ui-toggle($height, $on, $off) {
+	margin: 0;
+	padding: 0;
+
+	input[type='checkbox'] {
+		display: none;
+
+		&:checked + label {
+			border-color: $on;
+			background: $on;
+
+			> div {
+				margin-left: $height;
+			}
+		}
+	}
+
+	label {
+		transition: all 200ms ease;
+		display: inline-block;
+		position: relative;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background: $off;
+		box-shadow: inset 0 0 0 0 $on;
+		border: 2px solid $off;
+		border-radius: $height + 2;
+		width: $height * 2;
+		height: $height;
+
+		div {
+			transition: all 0.3s ease;
+			background: #fff;
+			width: $height;
+			height: $height;
+			border-radius: $height / 2;
+			-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+		}
+
+		&:hover,
+		& > div:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+div.ui-toggle {
+	@include ui-toggle(20px, $on, $off);
+
+	&.mb-10 {
+		margin-bottom: 10px;
+	}
+}

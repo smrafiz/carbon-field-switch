@@ -1,0 +1,16 @@
+{
+	"name": "htmlburger/carbon-field-switch",
+	"description": "Carbon Fields extension, that adds a switch field type.",
+	"keywords": [ "wordpress", "carbon-field", "carbon-field-swtich" ],
+	"homepage": "http://yourhomepage.example.com",
+	"type": "library",
+	"license": "GPL-2.0+",
+	"authors": [],
+	"require": {},
+	"autoload": {
+		"files": [ "field.php" ],
+		"psr-4": {
+			"Carbon_Field_Switch\\": "core/"
+		}
+	}
+}
