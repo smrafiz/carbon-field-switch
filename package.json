@@ -1,6 +1,7 @@
 {
 	"name": "carbon-field-switch",
-	"version": "3.0.0",
+	"version": "1.0.0",
+	"description": "A basic Carbon Fields extension, that adds support for Switch toggle field.",
 	"scripts": {
 		"start": "npm run development -- --watch",
 		"build": "npm run development && npm run production",
