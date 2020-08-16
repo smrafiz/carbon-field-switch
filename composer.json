@@ -1,7 +1,7 @@
 {
 	"name": "htmlburger/carbon-field-switch",
 	"description": "A basic Carbon Fields extension, that adds support for Switch toggle field.",
-	"keywords": [ "wordpress", "carbon-field", "carbon-field-swtich" ],
+	"keywords": [ "wordpress", "carbon-field", "carbon-field-switch" ],
 	"homepage": "https://github.com/smrafiz/carbon-field-switch",
 	"type": "library",
 	"license": "GPL-2.0+",
